@@ -228,9 +228,18 @@ nav {
 
 
 .banner img {
-    width: 250px;
-    height: 250px;
+    width: 228px;
+    height: 228px;
     margin-right: 70px;
+}
+
+@media (min-width:1215px) {
+    .banner img{
+        width: 250px;
+        height: 250px;
+      
+    }
+    
 }
 
 #angle-left {
@@ -239,17 +248,37 @@ nav {
     border-radius: 100%;
     padding: 5px 10px;
     color: rgb(234, 90, 138);
-    margin-right: 150px;
+    margin-right: 60px;
 
+}
+
+@media (min-width:1600px) {
+    #angle-left{
+        margin-right: 150px;
+    }
+    
 }
 
 .banner p {
     max-width: 765px;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 1000;
 
 }
 
+@media (min-width:1119px) {
+    .banner p{
+        font-size: 40px;
+    }
+    
+}
+
+@media (min-width:1175px) {
+    .banner p{
+        font-size: 45px;
+    }
+    
+}
 
 #angle-right {
     background-color: rgb(244, 244, 247);
@@ -257,7 +286,14 @@ nav {
     border-radius: 100%;
     padding: 5px 10px;
     color: rgb(234, 90, 138);
-    margin-left: 150px;
+    margin-left: 60px;
+}
+
+@media (min-width:1600px) {
+    #angle-right{
+        margin-right: 150px;
+    }
+    
 }
 
 main {
@@ -370,8 +406,13 @@ article a {
 .three-card {
     display: flex;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 
+
+.three-card::-webkit-scrollbar {
+    display: none;
+}
 .card {
     border-radius: 10px;
     width: 430px;
@@ -382,6 +423,7 @@ article a {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     gap: 2rem;
     margin-bottom: 40px;
+    margin-right: 1rem;
 }
 
 .card-img {
